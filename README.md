@@ -33,3 +33,37 @@ Approved by Isaiah
 https://www.figma.com/design/ZnIXW7lhkrCUHutajkpXOG/Projects-2?node-id=185-2&t=OypmxCyc2AapH4fv-1
 
 Peer Review:
+
+
+
+
+
+<!-- potential NavBar? 
+        <div class="flex justify-between">
+            <div class="mt-[20px] ml-[20px]">
+                <i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i>
+            </div>
+            <div class="mt-[20px] mr-[20px]">
+                <i class="fa-solid fa-arrow-right fa-2xl" style="color: #00ff2c;"></i>
+            </div>
+        </div>
+        <div>
+            <ul class="flex justify-evenly text-sm font-medium text-center text-[#00FF2C] border-b border-[#00FF2C] ">
+                <li class="border-1 border-[#00FF2C] border-b-0">
+                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
+                </li>
+                <li class="border-1 border-[#00FF2C] border-b-0">
+                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking Questions</a>
+                </li>
+                <li class="border-1 border-[#00FF2C] border-b-0">
+                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2 Numbers</a>
+                </li>
+                <li class="border-1 border-[#00FF2C] border-b-0">
+                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Odd Or Even</a>
+                </li>
+                <li class="border-1 border-[#00FF2C] border-b-0">
+                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">MadLib</a>
+                </li>
+            </ul>
+        </div> 
+-->

@@ -611,14 +611,38 @@
   .left-\[5\] {
     left: 5;
   }
+  .left-\[8\%\] {
+    left: 8%;
+  }
   .left-\[10\%\] {
     left: 10%;
+  }
+  .left-\[15\%\] {
+    left: 15%;
   }
   .left-\[20\%\] {
     left: 20%;
   }
+  .left-\[23\%\] {
+    left: 23%;
+  }
   .left-\[50\%\] {
     left: 50%;
+  }
+  .left-\[80\%\] {
+    left: 80%;
+  }
+  .left-\[81\%\] {
+    left: 81%;
+  }
+  .left-\[82\%\] {
+    left: 82%;
+  }
+  .left-\[87\%\] {
+    left: 87%;
+  }
+  .left-\[97\%\] {
+    left: 97%;
   }
   .my-20 {
     margin-block: calc(var(--spacing) * 20);
@@ -670,6 +694,9 @@
   }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .inline-block {
     display: inline-block;
@@ -770,11 +797,17 @@
   .transform-\[scale\] {
     transform: scale;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
   }
   .items-center {
     align-items: center;
@@ -841,6 +874,12 @@
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
+  .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
+  }
+  .pt-1\.5 {
+    padding-top: calc(var(--spacing) * 1.5);
+  }
   .pt-\[20px\] {
     padding-top: 20px;
   }
@@ -856,6 +895,10 @@
   .align-top {
     vertical-align: top;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -864,12 +907,30 @@
     font-size: var(--text-9xl);
     line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
   .text-\[100px\] {
     font-size: 100px;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
   }
   .text-\[250px\] {
     font-size: 250px;

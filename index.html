@@ -9,61 +9,67 @@
 </head>
 
 <body class="bg-[url(../assets/img/blank-pipboy-bg.png)] bg-cover bg-no-repeat">
+    
     <header class="flex">
-        <!-- <div class="flex justify-between">
-            <div class="mt-[20px] ml-[20px]">
-                <i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i>
-            </div>
-            <div class="mt-[20px] mr-[20px]">
-                <i class="fa-solid fa-arrow-right fa-2xl" style="color: #00ff2c;"></i>
-            </div>
-        </div>
-        <div>
-            <ul class="flex justify-evenly text-sm font-medium text-center text-[#00FF2C] border-b border-[#00FF2C] ">
-                <li class="border-1 border-[#00FF2C] border-b-0">
-                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
-                </li>
-                <li class="border-1 border-[#00FF2C] border-b-0">
-                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking Questions</a>
-                </li>
-                <li class="border-1 border-[#00FF2C] border-b-0">
-                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2 Numbers</a>
-                </li>
-                <li class="border-1 border-[#00FF2C] border-b-0">
-                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Odd Or Even</a>
-                </li>
-                <li class="border-1 border-[#00FF2C] border-b-0">
-                    <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">MadLib</a>
-                </li>
-            </ul>
-        </div> -->
-
         <div class="pt-[20px] pl-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
-            <i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i>
+            <a href="./index.html"><i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i></a>
         </div>
-        <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
-        <div class="text-sm font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-            <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
-        </div>
-        <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
-        <div class="text-sm font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-            <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking Questions</a>
-        </div>
-        <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
-        <div class="text-sm font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-            <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2 Numbers</a>
-        </div>
-        <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
-        <div class="text-sm font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-            <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Odd Or Even</a>
-        </div>
-        <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
-        <div class="text-sm font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-            <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">MadLib</a>
-        </div>
-        <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
+        <ul class="flex grow-1">
+            <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
+            <li id="helloWorldLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
+            </li>
+            <li id="magic8BallLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Magic 8 Ball</a>
+            </li>
+            <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
+            <li id="askingQuestionsLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking Questions</a>
+            </li>
+            <li id="restaurantLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Restaurant Picker</a>
+            </li>
+            <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
+            <li id="add2NumLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2 Numbers</a>
+            </li>
+            <li id="reverseItANLink"
+                class="font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="" class="inline-block pt-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">
+                    <h1 class="text-[14px]">Reverse It</h1>
+                    <h2 class="text-[10px]">(AlphaNumerical)</h2>
+                </a>
+            </li>
+            <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
+            <li id="oddOrEvenLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Odd Or Even</a>
+            </li>
+            <li id="reverseItNOLink"
+                class="font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="" class="inline-block pt-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">
+                    <h1 class="text-[14px]">Reverse It</h1>
+                    <h2 class="text-[10px]">(Numbers Only)</h2>
+                </a>
+            </li>
+            <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
+            <li id="madLibLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">MadLib</a>
+            </li>
+            <li id="greaterLessThanLink"
+                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Greater/Less Than</a>
+            </li>
+            <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
+        </ul>
         <div class="pt-[20px] pr-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
-            <i class="fa-solid fa-arrow-right fa-2xl" style="color: #00ff2c;"></i>
+            <i id="moreNavBtn" class="fa-solid fa-arrow-right fa-2xl cursor-pointer" style="color: #00ff2c;"></i>
         </div>
     </header>
 
@@ -73,16 +79,19 @@
         </div>
     </section>
 
-    <footer class="absolute left-[3%] top-[50%]">
-        <div class="flex">
-            <div class="transform-[scaleX(-1)]">
-                <img class="w-[260px] h-[390px] object-fill " src="./assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
-            </div>
+    <footer id="footer1" class="absolute left-[3%] top-[50%]">
+        <div class="transform-[scaleX(-1)]">
+            <img class="w-[260px] h-[390px] object-fill " src="./assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
         </div>
     </footer>
-    
+    <footer id="footer2" class="absolute left-[81%] top-[50%] hidden">
+        <div>
+            <img class="w-[260px] h-[390px] object-fill " src="./assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
+        </div>
+    </footer>
 
 
+    <script src="./scripts/app.js"></script>
     <script src="https://kit.fontawesome.com/7f646c57fd.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
 </body>
