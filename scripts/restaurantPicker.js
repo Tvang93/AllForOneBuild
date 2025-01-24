@@ -16,11 +16,12 @@ const linkSet2 = [
 
 const moreNavBtn = document.getElementById("moreNavBtn");
 const pipboyResponse = document.getElementById("pipboyResponse");
-const inputField = document.getElementById("inputField");
-const inputContainer = document.getElementById("inputContainer");
-const inputDirections = document.getElementById("inputDirections");
+const optionsContainer = document.getElementById("optionsContainer");
+const option1 = document.getElementById("option1");
+const option2 = document.getElementById("option2");
+const option3 = document.getElementById("option3");
 
-
+let choice = "";
 
 moreNavBtn.addEventListener("click", () => {
     console.log("butoon click")
@@ -51,24 +52,51 @@ const LinksSwitch = (set1, set2) => {
     })
 }
 
-inputField.addEventListener("focusin", () => {
-    inputDirections.classList.remove("hidden");
-})
-
-inputField.addEventListener("focusout", () => {
-    inputDirections.classList.add("hidden");
-})
-
-inputField.addEventListener("keypress", async(event) => {
-    if(event.key === "Enter"){
-        let response = await HelloWorldFetch(inputField.value);
+option1.addEventListener("click", async() => {
+    if(option1.innerText == "Chicken"){
+        choice = option1.innerText;
+        let response = await RestaurantPickerFetch(option1.innerText);
         pipboyResponse.innerText = `PipBoy: ${response}`;
-        inputField.value = "";
+        option1.innerText = "No, give me something else.";
+        option2.innerText = "Sure, sounds good.";
+        option3.innerText = "I want to go back."
+    }else{
+        let response = await RestaurantPickerFetch(choice);
+        pipboyResponse.innerText = `PipBoy: ${response}`;
     }
 })
 
-const HelloWorldFetch = async(text) => {
-    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/HelloWorld/HelloWorld/${text}`);
+option2.addEventListener("click", async() => {
+    if(option2.innerText == "Beef"){
+        choice = option2.innerText;
+        let response = await RestaurantPickerFetch(option2.innerText);
+        pipboyResponse.innerText = `PipBoy: ${response}`;
+        option1.innerText = "No, give me something else.";
+        option2.innerText = "Sure, sounds good.";
+        option3.innerText = "I want to go back."
+    }else{
+        pipboyResponse.innerText = `PipBoy: Glad I can be of service.`;
+    }
+})
+
+option3.addEventListener("click", async() => {
+    if(option3.innerText == "Seafood"){
+        choice = option3.innerText;
+        let response = await RestaurantPickerFetch(option3.innerText);
+        pipboyResponse.innerText = `PipBoy: ${response}`;
+        option1.innerText = "No, give me something else.";
+        option2.innerText = "Sure, sounds good.";
+        option3.innerText = "I want to go back."
+    }else{
+        option1.innerText = "Chicken";
+        option2.innerText = "Beef";
+        option3.innerText = "Seafood";
+        pipboyResponse.innerText = `PipBoy: Are you hungry? What do you feel like eating?`;
+    }
+})
+
+const RestaurantPickerFetch = async(text) => {
+    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/RestaurantPicker/RestuarantPicker/${text}`);
     const data = await promise.text();
     return data;
 }

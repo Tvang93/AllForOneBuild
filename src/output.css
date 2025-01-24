@@ -659,6 +659,9 @@
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
+  .rounded-\[30px\] {
+    border-radius: 30px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -666,6 +669,18 @@
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-r {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .border-r-1 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .border-r-\[30px\] {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 30px;
   }
   .border-b {
     border-bottom-style: var(--tw-border-style);
@@ -685,6 +700,9 @@
   .border-b-\[\#00FF2C\] {
     border-bottom-color: #00FF2C;
   }
+  .bg-\[rgb\(0\,255\,44\,0\.3\)\] {
+    background-color: rgb(0,255,44,0.3);
+  }
   .bg-\[url\(\.\.\/assets\/img\/blank-pipboy-bg\.png\)\] {
     background-image: url(../assets/img/blank-pipboy-bg.png);
   }
@@ -696,6 +714,9 @@
   }
   .object-fill {
     object-fit: fill;
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
@@ -748,6 +769,15 @@
   .pr-\[20px\] {
     padding-right: 20px;
   }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-5 {
+    padding-left: calc(var(--spacing) * 5);
+  }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
+  }
   .pl-20 {
     padding-left: calc(var(--spacing) * 20);
   }
@@ -768,6 +798,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-start {
+    text-align: start;
   }
   .text-2xl {
     font-size: var(--text-2xl);
