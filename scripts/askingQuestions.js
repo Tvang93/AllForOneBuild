@@ -81,12 +81,12 @@ inputField2.addEventListener("focusout", () => {
 
 inputField2.addEventListener("keypress", async(event) => {
     if(event.key === "Enter"){
-        let response = await HelloWorldFetch(inputField.value, inputField2.value);
+        let response = await AskingQuestionsFetch(inputField.value, inputField2.value);
         pipboyResponse2.innerText = `PipBoy: ${response}`;
     }
 })
 
-const HelloWorldFetch = async(input1, input2) => {
+const AskingQuestionsFetch = async(input1, input2) => {
     const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/AskingQuestions/WakeUpTime/${input1}/${input2}`);
     const data = await promise.text();
     return data;
