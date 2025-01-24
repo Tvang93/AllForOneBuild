@@ -15,10 +15,13 @@ const linkSet2 = [
 ]
 
 const moreNavBtn = document.getElementById("moreNavBtn");
-const pipboyResponse = document.getElementById("pipboyResponse");
+const pipboyResponse1 = document.getElementById("pipboyResponse1");
+const pipboyResponse2 = document.getElementById("pipboyResponse2");
 const inputField = document.getElementById("inputField");
-const inputContainer = document.getElementById("inputContainer");
+const inputField2 = document.getElementById("inputField2");
 const inputDirections = document.getElementById("inputDirections");
+const input2Directions = document.getElementById("input2Directions");
+const input2Container = document.getElementById("input2Container");
 
 
 
@@ -53,22 +56,38 @@ const LinksSwitch = (set1, set2) => {
 
 inputField.addEventListener("focusin", () => {
     inputDirections.classList.remove("hidden");
+    inputField.value = "";
 })
 
 inputField.addEventListener("focusout", () => {
     inputDirections.classList.add("hidden");
 })
 
-inputField.addEventListener("keypress", async(event) => {
+inputField.addEventListener("keypress", (event) => {
     if(event.key === "Enter"){
-        let response = await HelloWorldFetch(inputField.value);
-        pipboyResponse.innerText = `PipBoy: ${response}`;
-        inputField.value = "";
+    input2Container.classList.remove("hidden");
+    pipboyResponse1.classList.remove("hidden");
     }
 })
 
-const HelloWorldFetch = async(text) => {
-    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/HelloWorld/HelloWorld/${text}`);
+inputField2.addEventListener("focusin", () => {
+    input2Directions.classList.remove("hidden");
+    inputField2.value = "";
+})
+
+inputField2.addEventListener("focusout", () => {
+    input2Directions.classList.add("hidden");
+})
+
+inputField2.addEventListener("keypress", async(event) => {
+    if(event.key === "Enter"){
+        let response = await HelloWorldFetch(inputField.value, inputField2.value);
+        pipboyResponse2.innerText = `PipBoy: ${response}`;
+    }
+})
+
+const HelloWorldFetch = async(input1, input2) => {
+    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/AskingQuestions/WakeUpTime/${input1}/${input2}`);
     const data = await promise.text();
     return data;
 }

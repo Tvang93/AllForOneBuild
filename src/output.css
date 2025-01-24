@@ -521,11 +521,17 @@
   }
 }
 @layer utilities {
+  .collapse {
+    visibility: collapse;
+  }
   .absolute {
     position: absolute;
   }
   .fixed {
     position: fixed;
+  }
+  .relative {
+    position: relative;
   }
   .top-\[50\%\] {
     top: 50%;
@@ -554,6 +560,9 @@
   .ml-\[20px\] {
     margin-left: 20px;
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -566,6 +575,15 @@
   .inline-block {
     display: inline-block;
   }
+  .inline-flex {
+    display: inline-flex;
+  }
+  .list-item {
+    display: list-item;
+  }
+  .table {
+    display: table;
+  }
   .h-\[390px\] {
     height: 390px;
   }
@@ -575,8 +593,14 @@
   .w-\[940px\] {
     width: 940px;
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .grow-0 {
     flex-grow: 0;
@@ -584,14 +608,23 @@
   .grow-1 {
     flex-grow: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .rotate-180 {
     rotate: 180deg;
+  }
+  .transform {
+    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .transform-\[scaleX\(-1\)\] {
     transform: scaleX(-1);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -601,6 +634,10 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-1 {
     border-style: var(--tw-border-style);
@@ -639,14 +676,23 @@
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
+  }
+  .pt-1 {
+    padding-top: calc(var(--spacing) * 1);
   }
   .pt-1\.5 {
     padding-top: calc(var(--spacing) * 1.5);
   }
   .pt-\[20px\] {
     padding-top: 20px;
+  }
+  .pr-20 {
+    padding-right: calc(var(--spacing) * 20);
   }
   .pr-\[20px\] {
     padding-right: 20px;
@@ -691,6 +737,13 @@
   }
   .text-\[\#00FF2C\] {
     color: #00FF2C;
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:bg-\[rgb\(0\,255\,44\,0\.3\)\] {
     &:hover {
@@ -759,4 +812,9 @@
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
