@@ -539,6 +539,15 @@
   .left-\[3\%\] {
     left: 3%;
   }
+  .left-\[75\%\] {
+    left: 75%;
+  }
+  .left-\[79\%\] {
+    left: 79%;
+  }
+  .left-\[80\%\] {
+    left: 80%;
+  }
   .left-\[81\%\] {
     left: 81%;
   }
@@ -691,14 +700,53 @@
   .pt-\[20px\] {
     padding-top: 20px;
   }
+  .pr-0 {
+    padding-right: calc(var(--spacing) * 0);
+  }
+  .pr-0\.5 {
+    padding-right: calc(var(--spacing) * 0.5);
+  }
   .pr-20 {
     padding-right: calc(var(--spacing) * 20);
+  }
+  .pr-50 {
+    padding-right: calc(var(--spacing) * 50);
+  }
+  .pr-60 {
+    padding-right: calc(var(--spacing) * 60);
+  }
+  .pr-70 {
+    padding-right: calc(var(--spacing) * 70);
+  }
+  .pr-80 {
+    padding-right: calc(var(--spacing) * 80);
+  }
+  .pr-85 {
+    padding-right: calc(var(--spacing) * 85);
+  }
+  .pr-90 {
+    padding-right: calc(var(--spacing) * 90);
+  }
+  .pr-100 {
+    padding-right: calc(var(--spacing) * 100);
   }
   .pr-\[20px\] {
     padding-right: 20px;
   }
+  .pl-20 {
+    padding-left: calc(var(--spacing) * 20);
+  }
+  .pl-30 {
+    padding-left: calc(var(--spacing) * 30);
+  }
+  .pl-40 {
+    padding-left: calc(var(--spacing) * 40);
+  }
   .pl-100 {
     padding-left: calc(var(--spacing) * 100);
+  }
+  .pl-200 {
+    padding-left: calc(var(--spacing) * 200);
   }
   .pl-\[20px\] {
     padding-left: 20px;
@@ -721,6 +769,9 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[2rem\] {
+    font-size: 2rem;
   }
   .text-\[4rem\] {
     font-size: 4rem;
