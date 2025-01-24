@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All For One</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="../src/output.css">
 </head>
 
 <body class="bg-[url(../assets/img/blank-pipboy-bg.png)] bg-cover bg-no-repeat">
     
     <header class="flex">
         <div class="pt-[20px] pl-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
-            <a href="./index.html"><i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i></a>
+            <a href="../index.html"><i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i></a>
         </div>
         <ul class="flex grow-1">
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="helloWorldLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-                <a href="./pages/HelloWorld.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
+                <a href="./HelloWorld.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
             </li>
             <li id="magic8BallLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
@@ -73,26 +73,27 @@
         </div>
     </header>
 
-    <section class="mt-80">
-        <div class="text-9xl text-center text-[#00FF2C]">
-            <h1>All For One</h1>
+    <section class="flex flex-col mt-20 pl-100">
+        <ul class="text-[4rem] text-[#00FF2C]">
+            <li>PipBoy: What is your name?</li>
+        </ul>
+        <div id="inputContainer" class="flex flex-col text-[4rem] text-[#00FF2C]">
+            <input id="inputField" class="inline border-1 border-[#00FF2C] text-[4rem] text-[#00FF2C] w-[940px]" type="text" placeholder="Please type name in here.">
+            <h3 id="inputDirections" class="text-lg hidden">Please Type In Your Name Then Press Enter.</h3>
         </div>
-        
+        <ul class="text-[4rem] text-[#00FF2C]">
+            <li id="pipboyResponse"></li>
+        </ul>
     </section>
 
     <footer id="pipboy1" class="absolute left-[3%] top-[50%]">
         <div class="transform-[scaleX(-1)]">
-            <img class="w-[260px] h-[390px] object-fill " src="./assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
-        </div>
-    </footer>
-    <footer id="pipboy2" class="absolute left-[81%] top-[50%] hidden">
-        <div>
-            <img class="w-[260px] h-[390px] object-fill " src="./assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
+            <img class="w-[260px] h-[390px] object-fill " src="../assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
         </div>
     </footer>
 
 
-    <script src="./scripts/app.js"></script>
+    <script src="../scripts/helloWorld.js"></script>
     <script src="https://kit.fontawesome.com/7f646c57fd.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
 </body>

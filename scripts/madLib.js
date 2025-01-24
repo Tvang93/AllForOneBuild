@@ -4,7 +4,6 @@ const linkSet1 = [
     document.getElementById("add2NumLink"),
     document.getElementById("oddOrEvenLink"),
     document.getElementById("madLibLink"),
-    document.getElementById("pipboy1")
 ]
 
 const linkSet2 = [
@@ -13,10 +12,13 @@ const linkSet2 = [
     document.getElementById("reverseItANLink"),
     document.getElementById("reverseItNOLink"),
     document.getElementById("greaterLessThanLink"),
-    document.getElementById("pipboy2")
 ]
 
 const moreNavBtn = document.getElementById("moreNavBtn");
+const pipboyResponse = document.getElementById("pipboyResponse");
+const inputField = document.getElementById("inputField");
+const inputContainer = document.getElementById("inputContainer");
+const inputDirections = document.getElementById("inputDirections");
 
 
 
@@ -31,6 +33,7 @@ moreNavBtn.addEventListener("click", () => {
         LinksSwitch(linkSet2, linkSet1);
         moreNavBtn.classList.add("rotate-180");
     }
+
 })
 
 const LinksSwitch = (set1, set2) => {
@@ -46,4 +49,26 @@ const LinksSwitch = (set1, set2) => {
     set2.forEach(element => {
         element.classList.add("hidden")
     })
+}
+
+inputField.addEventListener("focusin", () => {
+    inputDirections.classList.remove("hidden");
+})
+
+inputField.addEventListener("focusout", () => {
+    inputDirections.classList.add("hidden");
+})
+
+inputField.addEventListener("keypress", async(event) => {
+    if(event.key === "Enter"){
+        let response = await HelloWorldFetch(inputField.value);
+        pipboyResponse.innerText = `PipBoy: ${response}`;
+        inputField.value = "";
+    }
+})
+
+const HelloWorldFetch = async(text) => {
+    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/HelloWorld/HelloWorld/${text}`);
+    const data = await promise.text();
+    return data;
 }

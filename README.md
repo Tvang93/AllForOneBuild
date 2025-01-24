@@ -1,6 +1,6 @@
 Thao Vang
 
-1/23/25
+1/24/25
 
 Assignment: All For One - Build
 
@@ -31,6 +31,9 @@ Brief Description:
 Figma:
 Approved by Isaiah
 https://www.figma.com/design/ZnIXW7lhkrCUHutajkpXOG/Projects-2?node-id=185-2&t=OypmxCyc2AapH4fv-1
+
+Azure:
+https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/
 
 Peer Review:
 
