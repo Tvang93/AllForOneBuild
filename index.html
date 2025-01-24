@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class="bg-[url(../assets/img/blank-pipboy-bg.png)] bg-cover bg-no-repeat ">
+<body class="bg-[url(../assets/img/blank-pipboy-bg.png)] bg-cover bg-no-repeat">
     <header class="flex">
         <!-- <div class="flex justify-between">
             <div class="mt-[20px] ml-[20px]">
@@ -38,7 +38,7 @@
             </ul>
         </div> -->
 
-        <div class="pt-[20px] pl-[20px] border-b-[#00FF2C] border-b-1 grow-0">
+        <div class="pt-[20px] pl-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
             <i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i>
         </div>
         <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
@@ -62,18 +62,25 @@
             <a href="" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">MadLib</a>
         </div>
         <div class="border-b-[#00FF2C] border-b-1 grow-1"></div>
-        <div class="pt-[20px] pr-[20px] border-b-[#00FF2C] border-b-1 grow-0">
+        <div class="pt-[20px] pr-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
             <i class="fa-solid fa-arrow-right fa-2xl" style="color: #00ff2c;"></i>
         </div>
     </header>
 
-    <section>
-
+    <section class="mt-80">
+        <div class="text-9xl text-center text-[#00FF2C]">
+            <h1>All For One</h1>
+        </div>
     </section>
 
-    <div class="absolute left-[0%] top-[] transform-[scaleX(-1)]">
-        <img class="" src="./assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
-    </div>
+    <footer class="absolute left-[3%] top-[50%]">
+        <div class="flex">
+            <div class="transform-[scaleX(-1)]">
+                <img class="w-[260px] h-[390px] object-fill " src="./assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
+            </div>
+        </div>
+    </footer>
+    
 
 
     <script src="https://kit.fontawesome.com/7f646c57fd.js" crossorigin="anonymous"></script>
