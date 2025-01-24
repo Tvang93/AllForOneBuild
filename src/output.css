@@ -605,6 +605,12 @@
   .w-\[260px\] {
     width: 260px;
   }
+  .w-\[400px\] {
+    width: 400px;
+  }
+  .w-\[450px\] {
+    width: 450px;
+  }
   .w-\[940px\] {
     width: 940px;
   }
@@ -649,6 +655,9 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
   .border {
     border-style: var(--tw-border-style);

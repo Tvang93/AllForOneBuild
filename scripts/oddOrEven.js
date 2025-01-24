@@ -61,14 +61,14 @@ inputField.addEventListener("focusout", () => {
 
 inputField.addEventListener("keypress", async(event) => {
     if(event.key === "Enter"){
-        let response = await HelloWorldFetch(inputField.value);
+        let response = await OddOrEvenFetch(inputField.value);
         pipboyResponse.innerText = `PipBoy: ${response}`;
         inputField.value = "";
     }
 })
 
-const HelloWorldFetch = async(text) => {
-    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/HelloWorld/HelloWorld/${text}`);
+const OddOrEvenFetch = async(text) => {
+    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/OddOrEven/OddOrEven/${text}`);
     const data = await promise.text();
     return data;
 }

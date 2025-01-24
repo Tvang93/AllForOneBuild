@@ -73,13 +73,19 @@
         </div>
     </header>
 
-    <section class="flex flex-col mt-20 pl-100">
+    <section class="flex flex-col mt-20 pl-40 pr-90">
         <ul class="text-[4rem] text-[#00FF2C]">
-            <li>PipBoy: What is your name?</li>
+            <li>PipBoy: I can tell you if one number is greater than or less than the other.</li>
         </ul>
-        <div id="inputContainer" class="flex flex-col text-[4rem] text-[#00FF2C]">
-            <input id="inputField" class="inline border-1 border-[#00FF2C] text-[4rem] text-[#00FF2C] w-[940px]" type="text" placeholder="Please type name in here.">
-            <h3 id="inputDirections" class="text-lg hidden">Please Type In Your Name Then Press Enter.</h3>
+        <div class="flex gap-20 mt-7">
+            <div id="inputContainer" class="flex flex-col text-[4rem] text-[#00FF2C]">
+                <input id="inputField" class="inline border-1 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[400px]" type="text" placeholder="First Number" maxlength="20">
+                <h3 id="inputDirections" class="text-lg hidden">Please Type In Both Numbers Then Press Enter.</h3>
+            </div>
+            <div id="input2Container" class="flex flex-col text-[4rem] text-[#00FF2C]">
+                <input id="inputField2" class="inline border-1 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[400px]" type="text" placeholder="Second Number" maxlength="20">
+                <h3 id="input2Directions" class="text-lg hidden">Please Type In Both Numbers Then Press Enter.</h3>
+            </div>
         </div>
         <ul class="text-[4rem] text-[#00FF2C]">
             <li id="pipboyResponse"></li>

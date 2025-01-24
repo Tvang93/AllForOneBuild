@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-[url(../assets/img/blank-pipboy-bg.png)] bg-cover bg-no-repeat">
-    
+
     <header class="flex">
         <div class="pt-[20px] pl-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
             <a href="../index.html"><i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i></a>
@@ -18,25 +18,30 @@
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="helloWorldLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-                <a href="./HelloWorld.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
+                <a href="./HelloWorld.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello
+                    World</a>
             </li>
             <li id="magic8BallLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
-                <a href="./Magic8Ball.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Magic 8 Ball</a>
+                <a href="./Magic8Ball.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Magic 8
+                    Ball</a>
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="askingQuestionsLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-                <a href="./AskingQuestions.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking Questions</a>
+                <a href="./AskingQuestions.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking
+                    Questions</a>
             </li>
             <li id="restaurantLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
-                <a href="./RestaurantPicker.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Restaurant Picker</a>
+                <a href="./RestaurantPicker.html"
+                    class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Restaurant Picker</a>
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="add2NumLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-                <a href="./Add2Numbers.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2 Numbers</a>
+                <a href="./Add2Numbers.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2
+                    Numbers</a>
             </li>
             <li id="reverseItANLink"
                 class="font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
@@ -64,7 +69,8 @@
             </li>
             <li id="greaterLessThanLink"
                 class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
-                <a href="./GreaterLessThan.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Greater/Less Than</a>
+                <a href="./GreaterLessThan.html"
+                    class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Greater/Less Than</a>
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
         </ul>
@@ -73,13 +79,19 @@
         </div>
     </header>
 
-    <section class="flex flex-col mt-20 pl-100">
+    <section class="flex flex-col mt-20 pl-100 pr-20">
         <ul class="text-[4rem] text-[#00FF2C]">
-            <li>PipBoy: What is your name?</li>
+            <li>PipBoy: I can add 2 number for you.</li>
         </ul>
-        <div id="inputContainer" class="flex flex-col text-[4rem] text-[#00FF2C]">
-            <input id="inputField" class="inline border-1 border-[#00FF2C] text-[4rem] text-[#00FF2C] w-[940px]" type="text" placeholder="Please type name in here.">
-            <h3 id="inputDirections" class="text-lg hidden">Please Type In Your Name Then Press Enter.</h3>
+        <div class="flex gap-20 mt-7">
+            <div id="inputContainer" class="flex flex-col text-[4rem] text-[#00FF2C]">
+                <input id="inputField" class="inline border-1 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[400px]" type="text" placeholder="First Number" maxlength="20">
+                <h3 id="inputDirections" class="text-lg hidden">Please Type In Both Numbers Then Press Enter.</h3>
+            </div>
+            <div id="input2Container" class="flex flex-col text-[4rem] text-[#00FF2C]">
+                <input id="inputField2" class="inline border-1 border-[#00FF2C] text-[2rem] text-[#00FF2C] w-[400px]" type="text" placeholder="Second Number" maxlength="20">
+                <h3 id="input2Directions" class="text-lg hidden">Please Type In Both Numbers Then Press Enter.</h3>
+            </div>
         </div>
         <ul class="text-[4rem] text-[#00FF2C]">
             <li id="pipboyResponse"></li>
@@ -88,7 +100,8 @@
 
     <footer id="pipboy1" class="absolute left-[3%] top-[50%]">
         <div class="transform-[scaleX(-1)]">
-            <img class="w-[260px] h-[390px] object-fill " src="../assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
+            <img class="w-[260px] h-[390px] object-fill " src="../assets/img/pipboy-man.png"
+                alt="pipboy giving thumbs up">
         </div>
     </footer>
 

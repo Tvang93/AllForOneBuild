@@ -19,6 +19,9 @@ const pipboyResponse = document.getElementById("pipboyResponse");
 const inputField = document.getElementById("inputField");
 const inputContainer = document.getElementById("inputContainer");
 const inputDirections = document.getElementById("inputDirections");
+const inputField2 = document.getElementById("inputField2");
+const input2Container = document.getElementById("input2Container");
+const input2Directions = document.getElementById("input2Directions");
 
 
 
@@ -60,15 +63,33 @@ inputField.addEventListener("focusout", () => {
 })
 
 inputField.addEventListener("keypress", async(event) => {
-    if(event.key === "Enter"){
+    if(event.key === "Enter" && inputField.value !== "" && inputField2.value !== ""){
         let response = await HelloWorldFetch(inputField.value);
         pipboyResponse.innerText = `PipBoy: ${response}`;
         inputField.value = "";
+        inputField2.value = "";
     }
 })
 
-const HelloWorldFetch = async(text) => {
-    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/HelloWorld/HelloWorld/${text}`);
+inputField2.addEventListener("focusin", () => {
+    input2Directions.classList.remove("hidden");
+})
+
+inputField2.addEventListener("focusout", () => {
+    input2Directions.classList.add("hidden");
+})
+
+inputField2.addEventListener("keypress", async(event) => {
+    if(event.key === "Enter" && inputField.value !== "" && inputField2.value !== ""){
+        let response = await GreaterThanLessThanFetch(inputField.value, inputField2.value);
+        pipboyResponse.innerText = `PipBoy: ${response}`;
+        inputField.value = "";
+        inputField2.value = "";
+    }
+})
+
+const GreaterThanLessThanFetch = async(text, text2) => {
+    const promise = await fetch(`https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/GreaterThanLessThan/GreaterThanLessThan/${text}/${text2}`);
     const data = await promise.text();
     return data;
 }
