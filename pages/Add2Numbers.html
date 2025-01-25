@@ -10,38 +10,40 @@
 
 <body class="bg-[url(../assets/img/blank-pipboy-bg.png)] bg-cover bg-no-repeat h-[100%] bg-center bg-fixed">
 
-    <header class="flex">
-        <div class="pt-[20px] pl-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
-            <a href="../index.html"><i class="fa-solid fa-house fa-2xl " style="color: #00ff2c;"></i></a>
+    <header class="flex justify-between lg:justify-normal">
+        <div>
+            <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
+                class="inline-flex pt-[28px] pl-[20px] p-2 rounded-lg lg:hidden" type="button">
+                <i class="fa-solid fa-bars fa-2xl" style="color: #00ff2c;"></i>
+            </button>
         </div>
-        <ul class="flex grow-1">
+        <div></div>
+        <div class="pt-[20px] pl-[20px] pr-[20px] lg:pr-0 lg:border-b-1 border-b-[#00FF2C] grow-0 shrink-0">
+            <a href="../index.html"><i class="fa-solid fa-house fa-2xl" style="color: #00ff2c;"></i></a>
+        </div>
+        <ul class="grow-1 lg:flex hidden">
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="helloWorldLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-                <a href="./HelloWorld.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello
-                    World</a>
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="./HelloWorld.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Hello World</a>
             </li>
             <li id="magic8BallLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
-                <a href="./Magic8Ball.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Magic 8
-                    Ball</a>
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="./Magic8Ball.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Magic 8 Ball</a>
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="askingQuestionsLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-                <a href="./AskingQuestions.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking
-                    Questions</a>
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="./AskingQuestions.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Asking Questions</a>
             </li>
             <li id="restaurantLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
-                <a href="./RestaurantPicker.html"
-                    class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Restaurant Picker</a>
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="./RestaurantPicker.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Restaurant Picker</a>
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="add2NumLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
-                <a href="./Add2Numbers.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2
-                    Numbers</a>
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                <a href="./Add2Numbers.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Adding 2 Numbers</a>
             </li>
             <li id="reverseItANLink"
                 class="font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
@@ -52,29 +54,28 @@
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="oddOrEvenLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
                 <a href="./OddOrEven.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Odd Or Even</a>
             </li>
             <li id="reverseItNOLink"
                 class="font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
-                <a href="./ReverseItNumOnly.html" class="inline-block pt-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">
+                <a href="./pages/ReverseItNumOnly.html" class="inline-block pt-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">
                     <h1 class="text-[14px]">Reverse It</h1>
                     <h2 class="text-[10px]">(Numbers Only)</h2>
                 </a>
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
             <li id="madLibLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10">
                 <a href="./MadLib.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">MadLib</a>
             </li>
             <li id="greaterLessThanLink"
-                class="text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
-                <a href="./GreaterLessThan.html"
-                    class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Greater/Less Than</a>
+                class="xl:text-2xl font-medium text-center text-[#00FF2C] border-1 border-[#00FF2C] border-b-0 grow-0 mt-10 hidden">
+                <a href="./GreaterLessThan.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Greater/Less Than</a>
             </li>
             <blank class="border-b-[#00FF2C] border-b-1 grow-1"></blank>
         </ul>
-        <div class="pt-[20px] pr-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0">
+        <div class="pt-[20px] pr-[20px] border-b-[#00FF2C] border-b-1 grow-0 shrink-0 lg:block hidden">
             <i id="moreNavBtn" class="fa-solid fa-arrow-right fa-2xl cursor-pointer" style="color: #00ff2c;"></i>
         </div>
     </header>
@@ -103,7 +104,7 @@
                 <a href="./OddOrEven.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Odd Or Even</a>
             </li>
             <li class="font-medium text-[#00FF2C]">
-                <a href=".//ReverseItNumOnly.html" class="inline-block pt-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Reverse It(Numbers Only)</a>
+                <a href="./ReverseItNumOnly.html" class="inline-block pt-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">Reverse It(Numbers Only)</a>
             </li>
             <li class="font-medium text-[#00FF2C]">
                 <a href="./MadLib.html" class="inline-block py-1.5 px-7 hover:bg-[rgb(0,255,44,0.3)]">MadLib</a>
