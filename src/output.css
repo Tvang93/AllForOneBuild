@@ -638,8 +638,17 @@
   .h-\[390px\] {
     height: 390px;
   }
+  .w-2510 {
+    width: calc(var(--spacing) * 2510);
+  }
   .w-\[200px\] {
     width: 200px;
+  }
+  .w-\[250\] {
+    width: 250;
+  }
+  .w-\[250px\] {
+    width: 250px;
   }
   .w-\[260px\] {
     width: 260px;
@@ -652,6 +661,12 @@
   }
   .w-\[940px\] {
     width: 940px;
+  }
+  .w-\[max\] {
+    width: max;
+  }
+  .w-max {
+    width: max-content;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -706,6 +721,9 @@
   }
   .justify-evenly {
     justify-content: space-evenly;
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -1136,6 +1154,11 @@
       margin-bottom: calc(var(--spacing) * 0);
     }
   }
+  .md\:px-55 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 55);
+    }
+  }
   .md\:py-0 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 0);
@@ -1196,6 +1219,11 @@
       justify-content: normal;
     }
   }
+  .lg\:gap-10 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:border-b-1 {
     @media (width >= 64rem) {
       border-bottom-style: var(--tw-border-style);
@@ -1254,6 +1282,11 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .lg\:text-\[2rem\] {
+    @media (width >= 64rem) {
+      font-size: 2rem;
+    }
+  }
   .lg\:text-\[3\.5rem\] {
     @media (width >= 64rem) {
       font-size: 3.5rem;
@@ -1289,14 +1322,34 @@
       width: 260px;
     }
   }
+  .xl\:w-\[400px\] {
+    @media (width >= 80rem) {
+      width: 400px;
+    }
+  }
   .xl\:w-\[940px\] {
     @media (width >= 80rem) {
       width: 940px;
     }
   }
+  .xl\:flex-col {
+    @media (width >= 80rem) {
+      flex-direction: column;
+    }
+  }
+  .xl\:flex-row {
+    @media (width >= 80rem) {
+      flex-direction: row;
+    }
+  }
   .xl\:items-start {
     @media (width >= 80rem) {
       align-items: flex-start;
+    }
+  }
+  .xl\:gap-20 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 20);
     }
   }
   .xl\:pr-20 {
@@ -1315,9 +1368,19 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
+  .xl\:text-\[2rem\] {
+    @media (width >= 80rem) {
+      font-size: 2rem;
+    }
+  }
   .xl\:text-\[4rem\] {
     @media (width >= 80rem) {
       font-size: 4rem;
+    }
+  }
+  .xl\:text-\[\#00FF2C\] {
+    @media (width >= 80rem) {
+      color: #00FF2C;
     }
   }
   .lg\:xl\:text-\[4rem\] {
@@ -1340,6 +1403,16 @@
   .\32 xl\:pr-20 {
     @media (width >= 96rem) {
       padding-right: calc(var(--spacing) * 20);
+    }
+  }
+  .\32 xl\:pr-90 {
+    @media (width >= 96rem) {
+      padding-right: calc(var(--spacing) * 90);
+    }
+  }
+  .\32 xl\:pl-40 {
+    @media (width >= 96rem) {
+      padding-left: calc(var(--spacing) * 40);
     }
   }
   .\32 xl\:pl-100 {
