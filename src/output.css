@@ -578,6 +578,12 @@
   .mr-\[20px\] {
     margin-right: 20px;
   }
+  .mb-0 {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
+  }
   .mb-30 {
     margin-bottom: calc(var(--spacing) * 30);
   }
@@ -610,6 +616,9 @@
   }
   .h-\[100\%\] {
     height: 100%;
+  }
+  .h-\[150px\] {
+    height: 150px;
   }
   .h-\[200px\] {
     height: 200px;
@@ -769,6 +778,33 @@
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
+  .py-25 {
+    padding-block: calc(var(--spacing) * 25);
+  }
+  .py-30 {
+    padding-block: calc(var(--spacing) * 30);
+  }
+  .py-32 {
+    padding-block: calc(var(--spacing) * 32);
+  }
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
+  }
   .py-45 {
     padding-block: calc(var(--spacing) * 45);
   }
@@ -809,6 +845,9 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[1\.5rem\] {
+    font-size: 1.5rem;
   }
   .text-\[2\.5rem\] {
     font-size: 2.5rem;
@@ -887,6 +926,16 @@
       display: none;
     }
   }
+  .lg\:w-\[750px\] {
+    @media (width >= 64rem) {
+      width: 750px;
+    }
+  }
+  .lg\:w-\[5000px\] {
+    @media (width >= 64rem) {
+      width: 5000px;
+    }
+  }
   .lg\:w-\[500px\] {
     @media (width >= 64rem) {
       width: 500px;
@@ -912,11 +961,6 @@
       width: 700px;
     }
   }
-  .lg\:w-\[750px\] {
-    @media (width >= 64rem) {
-      width: 750px;
-    }
-  }
   .lg\:w-\[800pc\] {
     @media (width >= 64rem) {
       width: 800pc;
@@ -925,11 +969,6 @@
   .lg\:w-\[800px\] {
     @media (width >= 64rem) {
       width: 800px;
-    }
-  }
-  .lg\:w-\[5000px\] {
-    @media (width >= 64rem) {
-      width: 5000px;
     }
   }
   .lg\:items-start {
