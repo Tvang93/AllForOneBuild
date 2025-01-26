@@ -35,7 +35,8 @@ https://www.figma.com/design/ZnIXW7lhkrCUHutajkpXOG/Projects-2?node-id=185-2&t=O
 Azure:
 https://allforonebuild-a9fgfcgkh5cnf6f7.westus-01.azurewebsites.net/
 
-Peer Review:
+Peer Review: Alexander Soria
+The presentation of your work is PHENMINAL! I haven't played Fallout but for someone who hasn't I think it really matches the feel of the game, it's amazing! As for the work itself, eveerything works flawlessly without error, and the tabs you can switch to is a nice touch! Your approach to the responsiveness is very good, too, tucking away the options in a hamburger menu very neatly. Well done!!!
 
 
 
