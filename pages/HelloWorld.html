@@ -10,7 +10,7 @@
 
 <body class="bg-[url(../assets/img/blank-pipboy-bg.png)] bg-cover bg-no-repeat h-[100%] bg-center bg-fixed">
     
-    <header class="flex justify-between lg:justify-normal">
+    <header class="flex justify-between lg:justify-normal mb-30 lg:mb-0">
         <div>
             <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots"
                 class="inline-flex pt-[28px] pl-[20px] p-2 rounded-lg lg:hidden" type="button">
@@ -115,22 +115,22 @@
         </ul>
     </div>
 
-    <section class="flex flex-col mt-20 pl-100 pr-20">
-        <ul class="text-[4rem] text-[#00FF2C]">
+    <section class="flex flex-col items-center justify-center px-15 py-45 sm:px-55 lg:py-0 lg:pt-20 lg:items-start lg:pl-50 2xl:pl-100 bg-[url(../assets/img/pipboy-man.png)] bg-no-repeat bg-center bg-[330px,430px] lg:bg-none">
+        <ul class="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
             <li>PipBoy: What is your name?</li>
         </ul>
-        <div class="flex flex-col text-[4rem] text-[#00FF2C]">
-            <input id="inputField" class="inline border-1 border-[#00FF2C] text-[4rem] text-[#00FF2C] w-[940px]" type="text" placeholder="Please type name in here.">
-            <h3 id="inputDirections" class="text-lg hidden">Please Type In Your Name Then Press Enter.</h3>
+        <div class="flex flex-col text-[#00FF2C] self-start">
+            <input id="inputField" class="inline border-1 border-[#00FF2C] text-[2rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] w-[300px] lg:w-[750px] xl:w-[940px]" type="text" placeholder="Please type name in here.">
+            <h3 id="inputDirections" class="lg:text-lg ">Please Type In Your Name Then Press Enter.</h3>
         </div>
-        <ul class="text-[4rem] text-[#00FF2C]">
+        <ul class="text-[2.5rem] lg:text-[3.5rem] xl:text-[4rem] text-[#00FF2C] self-start">
             <li id="pipboyResponse"></li>
         </ul>
     </section>
 
     <footer id="pipboy1" class="hidden lg:block absolute left-[3%] top-[50%]">
         <div class="transform-[scaleX(-1)]">
-            <img class="w-[260px] h-[390px] object-fill " src="../assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
+            <img class="w-[200px] h-[300px] xl:w-[260px] xl:h-[390px] object-fill " src="../assets/img/pipboy-man.png" alt="pipboy giving thumbs up">
         </div>
     </footer>
 
